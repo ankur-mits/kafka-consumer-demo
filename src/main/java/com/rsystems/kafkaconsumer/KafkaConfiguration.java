@@ -27,8 +27,8 @@ public class KafkaConfiguration {
 	    public ConsumerFactory<String, String> consumerFactory() {
 	        Map<String, Object> config = new HashMap<>();
 
-	        config.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "10.67.171.30:9092");
-	        //config.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "203.34.117.152:9092");
+	        //config.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "10.67.171.30:9092");
+	        config.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "203.34.117.152:9092");
 	        config.put(ConsumerConfig.GROUP_ID_CONFIG, "1");
 	        config.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
 	        config.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
